@@ -5,7 +5,7 @@ from PIL import Image
 from skimage.io import imread
 from tqdm import tqdm
 
-folder_path = ""  # Add the path to your data directory
+folder_path = "/home/aviv.salomon/Documents/MSC_Intelligence_Systems/Semester_A_second_year/Computer_vision/DUCK-Net/Data/Kvasir-SEG/"  # Add the path to your data directory
 
 
 def load_data(img_height, img_width, images_to_be_loaded, dataset):
@@ -51,12 +51,19 @@ def load_data(img_height, img_width, images_to_be_loaded, dataset):
         pillow_mask = pillow_mask.resize((img_height, img_width), resample=Image.LANCZOS)
         mask_ = np.array(pillow_mask)
 
-        for i in range(img_height):
+        # Convert to binary (keeping 3 channels)
+        binary_mask = (mask_ > 127).astype(np.uint8)
+
+        # Reduce to a single channel using max (any channel above 127 is set to 1)
+        binary_mask_single_channel = np.max(binary_mask, axis=-1)
+
+
+        """for i in range(img_height):
             for j in range(img_width):
                 if mask_[i, j] >= 127:
                     mask[i, j] = 1
-
-        Y_train[n] = mask
+        """
+        Y_train[n] = binary_mask_single_channel
 
     Y_train = np.expand_dims(Y_train, axis=-1)
 
