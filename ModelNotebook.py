@@ -36,7 +36,7 @@ model_path = 'ModelSaveTensorFlow/' + dataset_type + '/' + model_type + '_filter
 print(f"model path is: {model_path}\n")
 os.makedirs(os.path.dirname(model_path), exist_ok=True)
 
-EPOCHS = 2 #600
+EPOCHS = 50
 min_loss_for_saving = 0.2
 
 
