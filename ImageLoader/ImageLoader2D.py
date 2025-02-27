@@ -5,7 +5,7 @@ from PIL import Image
 from skimage.io import imread
 from tqdm import tqdm
 
-folder_path = "/home/aviv.salomon/Documents/MSC_Intelligence_Systems/Semester_A_second_year/Computer_vision/DUCK-Net/Data/Kvasir-SEG/"  # Add the path to your data directory
+folder_path = "/home/linuxu/PycharmProjects/Rejection_DUCK_Net_Medical/Data/Kvasir-SEG/"  # Add the path to your data directory
 
 
 def load_data(img_height, img_width, images_to_be_loaded, dataset):
