@@ -10,3 +10,4 @@
 /ModelSaveTensorFlow/DuckNet_17_Kvasir_Tf_Model/saved_model.pb
 ModelSaveTensorFlow/
 __pycache__/
+.idea/
