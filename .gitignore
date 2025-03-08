@@ -9,3 +9,4 @@
 /ModelSaveTensorFlow/DuckNet_17_Kvasir_Tf_Model/keras_metadata.pb
 /ModelSaveTensorFlow/DuckNet_17_Kvasir_Tf_Model/saved_model.pb
 ModelSaveTensorFlow/
+__pycache__/
