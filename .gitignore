@@ -2,3 +2,10 @@
 /venv_duck_net/
 /ModelSaveTensorFlow/
 /ModelSaveTensorFlow/DuckNet_17_Kvasir_Tf_Model/*
+/ModelSaveTensorFlow/DuckNet_17_Kvasir_Tf_Model/
+/ModelSaveTensorFlow/DuckNet_17_Kvasir_Tf_Model/variables/
+/ModelSaveTensorFlow/DuckNet_17_Kvasir_Tf_Model/variables/variables.data-00000-of-00001
+/ModelSaveTensorFlow/DuckNet_17_Kvasir_Tf_Model/variables/variables.index
+/ModelSaveTensorFlow/DuckNet_17_Kvasir_Tf_Model/keras_metadata.pb
+/ModelSaveTensorFlow/DuckNet_17_Kvasir_Tf_Model/saved_model.pb
+ModelSaveTensorFlow/
