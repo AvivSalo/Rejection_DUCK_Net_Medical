@@ -26,6 +26,6 @@ def stacking(model_images, grades, output_dir):
     grayscale_array = (weighted_sum * 255).astype(np.uint8)
     stack = Image.fromarray(grayscale_array, mode='L')
     stack.save(os.path.join(output_dir, "stack.png"))
-    print("Stack has been created and saved as 'stack.png'.")
-    print("Max grayscale value in stack:", grayscale_array.max())
+    # print("Stack has been created and saved as 'stack.png'.")
+    # print("Max grayscale value in stack:", grayscale_array.max())
     return stack, weighted_sum, grayscale_array
